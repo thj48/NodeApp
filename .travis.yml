@@ -6,11 +6,11 @@ script:
     - docker build -t terrydesigns/node .
     - docker images terrydesigns/node 
 
-before_deploy:
-    - docker login -u username -p password
+# before_deploy:
+#     - docker login -u username -p password
 
-deploy:
-    provider: script
-    script: docker push terrydesigns/node
-    on:
-        branch: master
+# deploy:
+#     provider: script
+#     script: docker push terrydesigns/node
+#     on:
+#         branch: master
